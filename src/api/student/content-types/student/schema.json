@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "students",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "student",
-    "description": ""
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student"
   },
   "options": {
     "draftAndPublish": true
@@ -13,7 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "mothername": {
       "type": "string",
@@ -29,14 +29,14 @@
       "unique": true
     },
     "upscappearinyear": {
-      "type": "string",
-      "required": false
-    },
-    "password": {
-      "type": "password"
+      "type": "string"
     },
     "coursename": {
       "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "password",
       "required": true
     }
   }
